@@ -1,0 +1,28 @@
+*{ /* Para todo el documento */
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#calculator{
+	background-color: #5cb6f2;
+	width: 500px;
+	height: 300px;
+	margin-left: 25%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+#n1{
+	font-size: 20px;
+	width: 300px;
+	height: 50px;
+}
+
+#calcuate{
+	width: 150px;
+	height: 50px;
+	border-radius: 5px;
+}
+
+#results{
+	list-style: none; /* para que no salgan las bolitas de la lista
+}
