@@ -1,0 +1,15 @@
+
+/* Estilo en el elemento prioridad sobre el css*/
+#header li:first-child h2 .title{
+    color: blue;
+}
+
+li:first-child h2.title{
+    color: red !important;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background-color: lightgrey;
+}
