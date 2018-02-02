@@ -187,17 +187,20 @@ var text;
         return (before || '') + text + (after || before || '');
     }
     
-    function text(_text){
-        return{
+    text = function (_text){
+        var _text = new String(_text);
+        
+        
             wrap: function(before,after){
                 return text((wrap(_text, before, after)))
             },
             toString: function(){
-                return _tex;
+                return _text;
             }
-        };
+        
     }
 })();
+var res = text('something').wrap('$').wrap('[', ']').wrap('{', '}').wrap('<', '>').wrap('#').toString();
 
 
 

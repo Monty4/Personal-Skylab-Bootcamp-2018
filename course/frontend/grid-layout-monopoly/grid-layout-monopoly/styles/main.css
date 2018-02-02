@@ -1,0 +1,102 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  /*grid-gap: 5px;*/
+  background-color: #FFFFFF;
+  padding: 10px;
+  width: 600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid black;
+  grid-gap: 20px; }
+
+.corner-1 .body {
+  transform: rotate(130deg);
+  padding-bottom: 40px; }
+
+.corner-5 .body {
+  transform: rotate(-135deg);
+  padding-bottom: 40px; }
+
+.corner-13 .body {
+  transform: rotate(45deg);
+  padding-bottom: 40px; }
+
+.corner-9 .body {
+  transform: rotate(-45deg);
+  padding-bottom: 40px; }
+
+.rowSup {
+  transform: rotate(180deg); }
+
+.rowSup .flag {
+  width: 80px;
+  height: 30px;
+  background-color: green; }
+
+.rowSup .body {
+  width: 80px;
+  height: 50px; }
+
+.colLeft {
+  transform: rotate(90deg); }
+
+.colLeft .flag {
+  width: 80px;
+  height: 30px;
+  background-color: blue; }
+
+.colLeft .body {
+  width: 80px;
+  height: 50px; }
+
+.colRight {
+  transform: rotate(-90deg); }
+
+.colRight .flag {
+  width: 80px;
+  height: 30px;
+  background-color: orange; }
+
+.colRight .body {
+  width: 80px;
+  height: 50px; }
+
+.rowInf {
+  transform: rotate(180deg); }
+
+.rowInf .flag {
+  width: 80px;
+  height: 30px;
+  background-color: red; }
+
+.rowInf .body {
+  width: 80px;
+  height: 50px; }
+
+div.inf {
+  background-color: orangered; }
+
+div.corner {
+  background-color: white; }
+
+.grid-container .blank {
+  border: 1px solid white; }
+
+.grid-container .Monopoly {
+  transform: rotate(-45deg);
+  border: 1px solid white;
+  position: absolute;
+  margin: 130px;
+  width: 320px;
+  height: 320px; }
+
+/*# sourceMappingURL=main.css.map */

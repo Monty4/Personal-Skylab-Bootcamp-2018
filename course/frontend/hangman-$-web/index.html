@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h2>Hangman</h2>
+    </header>
+
+    <section id="playSection">
+        <button id="play">Play</button>
+    </section>
+
+    <section id="valueSection" class="hidden">
+        <div>
+        <p><span>Enter a Word!!</span><input type="text" id="word"></p>
+        <p><span>Enter Attempts Number</span><input type="text" id="maxAttempts" value="10"></p>
+        <p style="text-align:center"><button id="go">Go!!</button></p>
+        </div>
+    </section>
+
+    <section id="trySection" class="hidden">
+        <div>
+            <p><span id="attempts"></span><span id="palabra"></span></p>
+            <p><span id="attempts"></span></p>
+            <p><span>Enter a character or word</span><input type="text" id="letter"></p>
+            <p style="text-align:center"><button id="try">Try!!</button></p>
+        </div>
+    </section>
+
+    <section id="faliled">
+        <div>
+            <span class="message"></span>
+        </div>
+        
+    </section>
+    
+
+    <script src="vendor/jquery-3.3.1.js"></script>
+    <script src="scripts/hangman.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
+<!--
+<p><span>Enter a Word!!</span><input type="text">
+    <br>
+    <span>Enter Attempts Number</span><input type="text">
+    <br>
+</p>
+
+
+<div class="fields">
+            <div class="title">Enter Attempts Number</div><div><input type="text"></div>
+        </div>
+        <div class="fields">
+            <div class="button"><button id="play">Go !</button></div>
+        </div>
+-->
