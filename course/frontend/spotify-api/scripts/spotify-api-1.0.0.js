@@ -19,11 +19,8 @@ var spotifyApi;
 
   spotifyApi = {
     baseUrl: "https://api.spotify.com/v1/",
-
-    token:
-      "BQDLbGZo3xveEZQ-Z8pRl65FLGoHW5nWXu8X3crs4V5mMVw9ioY6-rvHwaZQa1kLeGssbLdUI4avzH8VqNQiWg8dPUKD0KxPBCx2HIKrr-aWJGhzkR0vX1N9By1ELEN4hHfqeEWjCvD_kUg",
-
-    timeout: 2000,
+  token: "BQAdMeyJUvTYYYQ1X17qlcPTvMqnXPNvLzzSLlsWeZHG-UZrAOoJPNVf1k98zzDm9hUwt-Q_M41U9U95X_KTXrbr-ZMKhWSEEej4xlC2tXqREos53j83S39m7bKhIgraVbB8-T8VMw",
+  timeout: 2000,
 
     /**
      * Searches artists by matching a text.

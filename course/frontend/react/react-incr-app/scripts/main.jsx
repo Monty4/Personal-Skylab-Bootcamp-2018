@@ -6,26 +6,37 @@ class IncrementAPP extends React.Component {
         super()
 
         this.state = {
-            num: 0
+            num: 0,
+            value: ''
         }
     }
+
+    toOperate = e => this.setState({ value: e.target.value })
 
     increment = e => {
         e.preventDefault();
 
-        keepInput = e => this.setState({ input: e.target.value })
-        
-        this.setState(prevState => { return {num:prevState.num +1} })
-        
+        this.setState(prevState => {
+
+            this.setState( { num: parseFloat(prevState.num) + parseFloat(this.state.value)  } )
+            this.setState( { value: '' } )
+            }
+        )
     }
 
     decrement = e => {
         e.preventDefault()
-        this.setState(prevState => { return { num: prevState.num -1}
+        
+        this.setState(prevState => {
 
-        })
+            this.setState( { num: parseFloat(prevState.num) - parseFloat(this.state.value)  } )
+            this.setState( { value: '' } )
+            }
+        )
     }
 
+
+    ////////////////////// BOTONES DE + Y - //////////////////////////////////////
     // render() {
     //     return <form>
     //     <button onClick={this.decrement}>-</button>
@@ -34,11 +45,15 @@ class IncrementAPP extends React.Component {
     // </form>
     // }
 
+    //////////////////////// CAMPO DE TEXTO CON VALOR //////////////////////////////
+     
     render(){
         return <form>
-            <input type="text" /><button onChange={this.increment}>+</button>
+            <input type="text" placeholder="Número para operar" value={this.state.value} onChange={ this.toOperate } value1={ this.state.value } />&nbsp;
+            <button onClick={this.increment}>+</button>&nbsp;
+            <button onClick={this.decrement}>-</button>
             <p><h1>{this.state.num}</h1></p>
-            <input type="text" /><button onClick={this.decrement}>-</button>
+            
             </form>
     }
 }

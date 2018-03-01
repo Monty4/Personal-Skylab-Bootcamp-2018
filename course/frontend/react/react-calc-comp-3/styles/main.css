@@ -1,0 +1,15 @@
+* {
+    font-family: Courier New, Courier, monospace
+}
+input.round-blue-button {
+    border-radius: 10px;
+    border: 1px solid blue;
+}
+
+button.round-red-button{
+    border-radius: 10px;
+    border: 1px solid red;
+}
+a {
+    text-decoration: none;
+}

@@ -10,40 +10,50 @@
     <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+    <div class="container">
 
-    <div class="row" id="search">
-        <div class="col-md-6">
-            <form>
-                <input type="text" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <img src="images/spotify2.png" alt="">
+                </div>
+            </div>
+
+        <div class="row" id="search">
+            <div class="col-12">
+                <form>
+                    <input class="btn  my-2 my-sm-0" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
         </div>
-    </div>
-
-    <div class="row" id="artist">
-        <div class="col-md-6">
-            <select name="artist" id="SelectArtist" size="4"></select>                
-        </div>
-    </div>
-
-    <div class="row" id="albums">
         
-    </div>
-
-    <div class="row" id="tracks">
-        <div class="col-md-6">
-            <!--<select name="tracks" id="SelectTracks" size="4"></select>-->
-            <ul class="list-group"></ul>
+        <div class="row" id="artist">
+            <div class="col-12">
+                <select class="btn  my-2 my-sm-0" name="artist" id="SelectArtist" size="4"></select>                
+            </div>
         </div>
-    </div>
-    <div class="row" id="track">
-        <div class="col-md-6">
-                                     
+
+        <div class="row" id="albums"></div>
+
+        <div class="row" id="tracks">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-12"></div>
+                <!--<select name="tracks" id="SelectTracks" size="4"></select>-->
+                <ul class="list-group"></ul>
+            </div>
+        </div>
+        <div class="row" id="track">
+            <div class="col-md-6">
+                                        
+            </div>
         </div>
     </div>
     
     <script src="vendor/jquery/3.3.1/jquery-3.3.1.min.js"></script>
     <script src="vendor/bootstrap/4.0/js/bootstrap.min.js"></script>
+    <script src="vendor/babel/6.26.0/.min.js"></script>
+    <script src="vendor/react-dom.production.min.js"></script>
+    <script src="vendor/react.production.min.js"></script>
     <script src="scripts/main.js"></script>
 
 </body>

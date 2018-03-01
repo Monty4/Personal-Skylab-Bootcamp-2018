@@ -16,7 +16,7 @@ $('#track').hide();
                               
             type: 'GET',
           
-            headers: {"Authorization": "Bearer BQBgsQpRwcL9TX7QN1-xAtLDVZcxC2JDpuK6hxUz6iIrnmJW4UZni3BjcYNKvIpFc5VYS9du4wdnhABX-PK-XtvGTS6VbjmulkjWNKck_YEflar3x1c19uYZrVxVUtd60Ez5HGDAT0R3ietIus8ehyk"},
+            headers: {"Authorization": "Bearer BQAdMeyJUvTYYYQ1X17qlcPTvMqnXPNvLzzSLlsWeZHG-UZrAOoJPNVf1k98zzDm9hUwt-Q_M41U9U95X_KTXrbr-ZMKhWSEEej4xlC2tXqREos53j83S39m7bKhIgraVbB8-T8VMw"},
             success: function(result){
                 //$('.class').empty();
                 $('#artist').show();
@@ -46,7 +46,7 @@ $('#track').hide();
 
             type: 'GET',
 
-            headers: {"Authorization": "Bearer BQBgsQpRwcL9TX7QN1-xAtLDVZcxC2JDpuK6hxUz6iIrnmJW4UZni3BjcYNKvIpFc5VYS9du4wdnhABX-PK-XtvGTS6VbjmulkjWNKck_YEflar3x1c19uYZrVxVUtd60Ez5HGDAT0R3ietIus8ehyk"},
+            headers: {"Authorization": "Bearer BQAdMeyJUvTYYYQ1X17qlcPTvMqnXPNvLzzSLlsWeZHG-UZrAOoJPNVf1k98zzDm9hUwt-Q_M41U9U95X_KTXrbr-ZMKhWSEEej4xlC2tXqREos53j83S39m7bKhIgraVbB8-T8VMw"},
             success: function(result){
                 $('#albums').empty();
                 $('#albums').show();
@@ -54,11 +54,11 @@ $('#track').hide();
 
                 result.albums.items.forEach(function(albums){
                     console.log(albums.id);
-                    var src = albums.images[2].url;
-                    var wid = albums.images[2].width;
-                    var heig = albums.images[2].width;
+                    var src = albums.images[1].url;
+                    // var wid = albums.images[1].width;
+                    // var heig = albums.images[1].width;
                     //$('#SelectAlbum').append('<option value="' + albums.id + '">' + albums.name + '</option>');
-                    $('#albums').append('<div class="col-md-3"><p><img src="' + src + '" alt=""></p><p><a href="#" id="' + albums.id + '">' + albums.name + '</a></p></div>')
+                    $('#albums').append('<div class="col-sm-3"><div class="card"><img class="card-img-top" src="' + src + '" alt=""><div class="card-body"><p class="card-text"><a href="#" id="' + albums.id + '">' + albums.name + '</a></p></div></div></div></div>')
                 });
 
             }
@@ -77,7 +77,7 @@ $('#track').hide();
 
             type: 'GET',
 
-            headers: {"Authorization": "Bearer BQBgsQpRwcL9TX7QN1-xAtLDVZcxC2JDpuK6hxUz6iIrnmJW4UZni3BjcYNKvIpFc5VYS9du4wdnhABX-PK-XtvGTS6VbjmulkjWNKck_YEflar3x1c19uYZrVxVUtd60Ez5HGDAT0R3ietIus8ehyk"},
+            headers: {"Authorization": "Bearer BQAdMeyJUvTYYYQ1X17qlcPTvMqnXPNvLzzSLlsWeZHG-UZrAOoJPNVf1k98zzDm9hUwt-Q_M41U9U95X_KTXrbr-ZMKhWSEEej4xlC2tXqREos53j83S39m7bKhIgraVbB8-T8VMw"},
 
             success: function(result){
                 
@@ -88,7 +88,8 @@ $('#track').hide();
 
                 result.items.forEach(function(tracks){
                     
-                    $('#tracks > .col-md-6').append('<li class="list-group-item" id="' + tracks.id + '">' + tracks.name + '</li>');
+                    $('#tracks > .col-sm-12').append('<li class="list-group-item list-group-item-success" id="' + tracks.id + '">' + tracks.name + '</li>');
+                    // $('.list-gropup').append('<a href="#!" class="list-group-item list-group-item-action list-group-item-success"></a>');
                 });
 
             }
@@ -104,7 +105,7 @@ $('#track').hide();
 
             type: 'GET',
 
-            headers: {"Authorization": "Bearer BQCEHt-Pu5BoGQFkCGt43FoSg-zEPKLYoP9DfL797AycLU4GNuKrWB2nV2mXQ-jlLYGinrLDZtxrkgfIeTVT1uhedArDkPCqAIVgnWejByPuhOYnHGbGUl3sMyYqXJSf6RdTUnFeHUakVCiZ2Ijyys4"},
+            headers: {"Authorization": "Bearer BQAdMeyJUvTYYYQ1X17qlcPTvMqnXPNvLzzSLlsWeZHG-UZrAOoJPNVf1k98zzDm9hUwt-Q_M41U9U95X_KTXrbr-ZMKhWSEEej4xlC2tXqREos53j83S39m7bKhIgraVbB8-T8VMw"},
 
             success: function(result){
                 //console.log(result);
